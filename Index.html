@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mia Musica - Stile Spotify</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-spotify me-2"></i>
+                My Music
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#albums">
+                            <i class="fas fa-search me-1"></i> Search
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured">
+                            <i class="fas fa-book me-1"></i> My Library
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <!-- Album Collection Section -->
+            <section id="albums" class="mb-5">
+                <h2 class="mb-4">Fra's Library</h2>
+                <div class="row g-4">
+                    <!-- Album 1 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-card">
+                            <div class="position-relative">
+                                <img src="assets/bossa bros.jpg" class="img-fluid album-img" alt="Album 1">
+                            </div>
+                            <h5 class="card-title">Shallow</h5>
+                            <p class="card-text">Bossa Bros</p>
+                        </div>
+                    </div>
+                    <!-- Album 2 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-card">
+                            <div class="position-relative">
+                                <img src="assets/coez.jpg" class="img-fluid album-img" alt="Album 2">
+
+                            </div>
+                            <h5 class="card-title">Faccio un casino</h5>
+                            <p class="card-text">Coez</p>
+                        </div>
+                    </div>
+                    <!-- Album 3 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-card">
+                            <div class="position-relative">
+                                <img src="assets/the lumineers.jpeg" class="img-fluid album-img" alt="Album 3">
+                           </div>
+                            <h5 class="card-title">Cleopatra</h5>
+                            <p class="card-text">The Lumineers</p>
+                        </div>
+                    </div>
+                    <!-- Album 4 -->
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="album-card">
+                            <div class="position-relative">
+                                <img src="assets/gazzelle.jpg" class="img-fluid album-img" alt="Album 4">
+                            </div>
+                            <h5 class="card-title">Post Punk</h5>
+                            <p class="card-text">Gazzelle</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Album Section -->
+            <section id="featured" class="mb-5">
+                <h2 class="mb-4">Fra's favorite</h2>
+                <div class="featured-album">
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="position-relative">
+                                <img src="assets/the lumineers.jpeg" class="img-fluid album-img" alt="Album Preferito">
+                                <div class="play-button position-absolute bottom-0 end-0 mb-3 me-3">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="mb-1">Cleopatra</h3>
+                            <h5 class="text-muted mb-4">The Lumineers</h5>
+                            <div class="mb-4">
+                                <span class="badge me-2">Indie Folk</span>
+                                <span class="badge me-2">31:47</span>
+                                <span class="badge">2016</span>
+                            </div>
+                            <div class="track-list">
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <strong>Sleep On The Floor</strong>
+                                            <div class="text-muted">The Lumineers</div>
+                                        </div>
+                                        <span>3:32</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <strong>Ophelia</strong>
+                                            <div class="text-muted">The Lumineers</div>
+                                        </div>
+                                        <span>2:41</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <strong>Long Way From Home</strong>
+                                            <div class="text-muted">The Lumineers</div>
+                                        </div>
+                                        <span>2:33</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <strong>In The Light</strong>
+                                            <div class="text-muted">The Lumineers</div>
+                                        </div>
+                                        <span>3:52</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
